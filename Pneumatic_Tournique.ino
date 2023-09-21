@@ -91,12 +91,12 @@
   
   
   void loop(){
-  	lcd.setCursor(0, 0);
+    lcd.setCursor(0, 0);
     lcd.print("Enter Pressure!");
     delay(2000);
     lcd.clear();
     
-    while(1){ //讓程式一直執行這個while迴圈不被打破
+    while(1){
     	lcd.setCursor(0,0);lcd.print("Data Loading...");
     	
     	if(Serial2.available()==3){
